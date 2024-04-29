@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        thead th {
+            padding: 20px;
+        }
+
+        tbody img {
+            width: 140px;
+            height: 150px;
+            padding: 10px;
+        }
+
+        tbody td {
+            padding: 10px;
+        }
+
+        tbody .cartdata {
+            display: flex;
+        }
+
+        .cartdata div {
+            padding-left: 20px;
+        }
+
+        .cart{
+            display: flex;
+            width: 90vw;
+            margin: auto;
+        }
+
+        .shopping-cart{
+            width: 70%;
+        }
+        .cart-summary{
+            width: 30%;
+            /* border: 1px solid black; */
+            padding: 20px;
+        }
+        .cart-summary button{
+            margin-top: 7px;
+            background-color: rgb(187, 181, 181);
+            padding: 8px;
+            border: none;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cart">
+
+    
+    <div class="shopping-cart">
+        <table border="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th width="50%">
+                        Product
+                    </th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="cartdata">
+                        <img src="./images/1.webp" alt="">
+                        <div>
+                            <h3>Product Name</h3>
+                            <h5>Product Desc</h5>
+                        </div>
+                    </td>
+                    <td>Rs.</td>
+                    <td>
+                        <button>-</button>
+                        <input type="number">
+                        <button>+</button>
+                    </td>
+                    <td>Total</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="cart-summary">
+        <h2>Order Summary</h2>
+
+        <h3>Total Items: </h3>
+        <h3>Total Cost: </h3>
+
+        <button>Check Out</button>
+    </div>
+
+</div>
+</body>
+
+</html>
